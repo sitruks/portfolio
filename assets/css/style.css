@@ -282,10 +282,15 @@ max-width: 100%;
   top:-10px;
 }
 
+/* REMOVE THE TIMELINE TRAILING TAIL */
+.timeline ul li:last-child::after {
+  border: 0px solid rgba(119, 235, 69, 0.5);
+}
+
 /* PORTFOLIO ITEMS */
 
 #project-1 {
-  background-image: url();
+  background: url(https://github.com/sitruks/portfolio/blob/master/assets/images/recipeBuddy.png);
   background-size:cover;
 }
 

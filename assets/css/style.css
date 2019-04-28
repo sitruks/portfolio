@@ -18,11 +18,12 @@ body {
 CREDIT: https://codepen.io/anon/pen/YMBeRQ for initial inspiration/framework for side scroll timeline with mouseover effect.
 CREDIT: https://coderwall.com/p/m-uwvg/css-background-noise for grainy cell effect on timeline items
 CREDIT: https://codepen.io/chrissp26/pen/OPNKXm for the film cell effect
+https://codepen.io/xero09/pen/PPZGME
 ------------- */
 
 /* TIMELINE */
 
-#container {
+#timelineContainer {
   height: 300px;
   width: 100%;
   overflow: hidden;
@@ -39,110 +40,6 @@ CREDIT: https://codepen.io/chrissp26/pen/OPNKXm for the film cell effect
   overflow: hidden;
   white-space: nowrap;
   /* padding: 10px 10px; */
-}
-
-/* FILM CELL FORMATTING */
-
-.clip {
-  float: left;
-  width: 31%;
-  margin: 0 1%;
-  padding-top: 23%;
-  position: relative;
-  background-color: #000;
-  background-image:  
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff),        
-        
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff), 
-    linear-gradient(to right, #fff, #fff);
-
-  background-repeat:no-repeat;
-  background-position: 
-    5% 5%,
-    15% 5%,
-    25% 5%, 
-    35% 5%,
-    45% 5%,
-    55% 5%,
-    65% 5%,
-    75% 5%, 
-    85% 5%,
-    95% 5%,
-            
-    5% 95%,
-    15% 95%,
-    25% 95%, 
-    35% 95%,
-    45% 95%,
-    55% 95%,
-    65% 95%,
-    75% 95%, 
-    85% 95%,
-    95% 95%;
-  
-  background-size:
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-        
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%,
-    5% 8%;
-  }
-.clip .film {  
-margin: 12% 5%;
-position: absolute;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-overflow: hidden;
-display: -webkit-grid;
-display: -ms-grid;
--webkit-grid-columns: 1fr;
--webkit-grid-rows: 1fr;
--ms-grid-columns: 1fr;
--ms-grid-rows: 1fr;
-}
-.clip img {
-max-width: 100%;
--webkit-grid-row-align: center;
--ms-grid-row-align: center;
 }
 
 .history-block {
@@ -287,6 +184,61 @@ max-width: 100%;
   top:-10px;
 }
 
+/* FILM CELL FORMATTING */
+
+.wrapper {
+  margin: auto;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: auto;
+  overflow: hidden;
+  
+}
+.top-boxes {
+  width: 100%;
+  height: 40px;
+}
+.bottom-boxes {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 40px;
+}
+.small_box {
+  margin: 0;
+  background-color: #fff;
+  display: inline-block;
+  width: 26px;
+  height: 20px;
+  margin: 10px 10px 10px 10.81px;
+}
+.center_box{
+  width: 90%;
+  height: 170px;
+  background: url(http://www.porathcontractors.com/gallery/albums/projects/Sunset.sized.jpg) center center no-repeat;
+  margin: auto;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+  transition: transform 0.3s linear;
+  animation: load 1s linear;
+}
+
+.center_box:hover{
+  transform: scale(0.95);
+  opacity: 0.75;
+}
+
+@keyframes load{
+  from{transform: scale(0);}
+}
+
+
+/* ------------- OTHER ITEMS ------------- */
+
 /* PORTFOLIO ITEMS */
 
 #project-1 {
@@ -312,4 +264,25 @@ max-width: 100%;
 #game-3 {
   background: url('../images/wordGuess_game.png');
   background-size:cover;
+}
+
+/* FOOTER FORMATTING */
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  background-color: #666666;
+  color: #ffffff;
+  border-top: solid 8px #4aaaa5;
+  font-size: 14px;
+}
+
+.footerText {
+  margin-top: 10px;
+}
+
+.display-4 {
+  font-size: 1.75rem;
+  color: #4aaaa5;
 }

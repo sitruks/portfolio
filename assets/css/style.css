@@ -277,39 +277,39 @@ max-width: 100%;
   transition: all 0.5s;
 }
 
+/* REMOVE THE TIMELINE TRAILING TAIL */
+.timeline ul li:last-child::after {
+  border: 0px;
+}
+
 .timeline ul li:hover .timelineYear {
   position: static;
   top:-10px;
 }
 
-/* REMOVE THE TIMELINE TRAILING TAIL */
-.timeline ul li:last-child::after {
-  border: 0px solid rgba(119, 235, 69, 0.5);
-}
-
 /* PORTFOLIO ITEMS */
 
 #project-1 {
-  background: url(https://github.com/sitruks/portfolio/blob/master/assets/images/recipeBuddy.png);
-  background-size:cover;
-}
-
-#game-1 {
-  background: url(http://www.unido.org/uploads/tx_templavoila/history_07.jpg);
-  background-size:cover;
-}
-
-#game-2 {
-  background: url(http://austria-forum.org/attach/Wissenssammlungen/Bibliothek/Wien_mit_den_Augen_des_Adlers/Wien_der_Moderne/UNO-City,_Austria_Center_Vienna/dkaiser_hav_25.jpg);
-  background-size:cover;
-}
-
-#game-3 {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Power_Plant_(Tianjin,_China).jpg');
+  background: url('../images/recipeBuddy_project.png');
   background-size:cover;
 }
 
 #app-1 {
-  background: url(http://www.3adi.org/tl_files/3ADIDocuments/Pictures/Greenshot_2014-01-08_18-32-54.jpg);
+  background: url('../images/giphy_app.png');
+  background-size:cover;
+}
+
+#game-1 {
+  background: url('../images/trivia_game.png');
+  background-size:cover;
+}
+
+#game-2 {
+  background: url('../images/spaceBattle_game.png');
+  background-size:cover;
+}
+
+#game-3 {
+  background: url('../images/wordGuess_game.png');
   background-size:cover;
 }

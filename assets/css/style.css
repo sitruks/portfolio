@@ -285,7 +285,7 @@ max-width: 100%;
 /* PORTFOLIO ITEMS */
 
 #project-1 {
-  background: url(https://i.dailymail.co.uk/i/pix/2012/07/23/article-0-142DF918000005DC-387_468x665.jpg);
+  background-image: url();
   background-size:cover;
 }
 

@@ -10,7 +10,7 @@ var viewportWidth, divWidth, tb;
       tb.css({left: ((viewport - divWidth)*((e.pageX / viewport).toFixed(3))).toFixed(1) +"px" });
  		});
     
-    $('.history-block').on('click', function(){
+    $('.history-block').on('click', function() {
       $('.history-block').css('width', '300px');
       $('.history-block').find('.title').css('width', '260px');
        $('.history-block .timeline').hide(300);

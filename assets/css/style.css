@@ -1,7 +1,7 @@
 /* ------------- BACKGROUND ------------- */
 html {
     background-color: #faf1d4;
-    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
     background-size: 15%;
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -23,7 +23,7 @@ CREDIT: https://codepen.io/chrissp26/pen/OPNKXm for the film cell effect
 /* TIMELINE */
 
 #container {
-  height: 200px;
+  height: 300px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -180,11 +180,10 @@ max-width: 100%;
   background: rgba(0,0,0,0.8);
 }
 
-.year {
+.project {
   position: absolute;
   top: 0px;
   font-size: 30px;
-  font-weight:500;
   margin: 40px 30px;
 }
 
@@ -285,32 +284,27 @@ max-width: 100%;
 
 /* PORTFOLIO ITEMS */
 
-.bg-66 .game1 {
+#project-1 {
+  background: url(https://i.dailymail.co.uk/i/pix/2012/07/23/article-0-142DF918000005DC-387_468x665.jpg);
+  background-size:cover;
+}
+
+#game-1 {
   background: url(http://www.unido.org/uploads/tx_templavoila/history_07.jpg);
   background-size:cover;
 }
 
-.bg-76 .game2 {
+#game-2 {
   background: url(http://austria-forum.org/attach/Wissenssammlungen/Bibliothek/Wien_mit_den_Augen_des_Adlers/Wien_der_Moderne/UNO-City,_Austria_Center_Vienna/dkaiser_hav_25.jpg);
   background-size:cover;
 }
 
-.bg-86 .game3 {
+#game-3 {
   background: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Power_Plant_(Tianjin,_China).jpg');
   background-size:cover;
 }
 
-.bg-96 .game4 {
-  background: url(http://www.oxfordbusinessgroup.com/sites/default/files/styles/chapter_header__710x233_/public/chapter_headers/ind1_2.png?itok=uxI_081i&c=af7608f5f35cf219c326e9b6e6a7d34c);
-  background-size:cover;
-}
-
-.bg-06 .app1 {
+#app-1 {
   background: url(http://www.3adi.org/tl_files/3ADIDocuments/Pictures/Greenshot_2014-01-08_18-32-54.jpg);
-  background-size:cover;
-}
-
-.bg-16 .project1 {
-  background: url(https://i.dailymail.co.uk/i/pix/2012/07/23/article-0-142DF918000005DC-387_468x665.jpg);
   background-size:cover;
 }

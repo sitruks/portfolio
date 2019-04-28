@@ -1,4 +1,5 @@
-var viewportWidth, divWidth, tb;
+let viewportWidth, divWidth, tb;
+
 $(function () {
 
   viewport = $('#timelineContainer').innerWidth();
@@ -34,4 +35,5 @@ $(function () {
   $('.timeline ul li').on('click', function () {
     $(this).parent().blink();
   });
+  
 });

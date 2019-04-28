@@ -199,14 +199,16 @@ https://codepen.io/xero09/pen/PPZGME
   
 }
 .top-boxes {
+  position: relative;
   width: 100%;
   height: 40px;
+  top: -22px;
 }
 .bottom-boxes {
-  position: absolute;
+  position: sticky;
   width: 100%;
   height: 40px;
-  bottom: 40px;
+  bottom: 10px;
 }
 .small_box {
   margin: 0;

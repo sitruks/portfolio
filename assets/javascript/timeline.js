@@ -35,8 +35,6 @@ $(function () {
     $(this).find('.project').toggleClass('active');
     $(this).find('.top-boxes-zoom').toggle();
     $(this).find('.bottom-boxes-zoom').toggle();
-    // $(this).find('.top-boxes-zoom').toggleClass('active');
-    // $(this).find('.bottom-boxes-zoom').toggleClass('active');
   });
 
 });

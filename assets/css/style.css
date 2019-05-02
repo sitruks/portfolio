@@ -15,9 +15,11 @@ body {
 }
 
 /* ------------- TIMELINE FORMATTING RESPONSIVE 
+ALTHOUGH I EXPENDED A GOOD AMOUNT OF EFFORT TO DEVELOP A CUSTOM TIMELINE FOR MY PORTFOLIO, CREDIT AND INSPIRATION IS UNDOUBTEDLY DUE TO THE FOLLOWING GREAT PEOPLE:
 CREDIT: https://codepen.io/anon/pen/YMBeRQ for initial inspiration/framework for side scroll timeline with mouseover effect.
 CREDIT: https://coderwall.com/p/m-uwvg/css-background-noise for grainy cell effect on timeline items
 CREDIT: https://codepen.io/xero09/pen/PPZGME for the film cell effect
+CREDIT: https://jsfiddle.net/SkiWether/r8ErN/ for the on/off or toggle effect for zooming into the portfolio item
 ------------- */
 
 /* TIMELINE */
@@ -56,6 +58,11 @@ CREDIT: https://codepen.io/xero09/pen/PPZGME for the film cell effect
   transition: width 0.2s;
 }
 
+.history-block.active {
+  width: 600px;
+  transition: width 0.1s;
+}
+
 .history-block:last-of-type {
   border-right: none;
 }
@@ -92,6 +99,10 @@ CREDIT: https://codepen.io/xero09/pen/PPZGME for the film cell effect
   margin: 30px;
   white-space: normal;
   transition: width 0.2s;
+}
+
+.project.active {
+  width: 500px;
 }
 
 .timeline {
@@ -189,22 +200,15 @@ CREDIT: https://codepen.io/xero09/pen/PPZGME for the film cell effect
 .box {
   width: 100%;
   height: 100%;
-  display: inline-block;
+  display: table-row;
   margin: auto;
   overflow: hidden;
 }
 .top-boxes {
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  top: -22px;
+  height: 270px;
+  margin-top: -20px;
 }
-.bottom-boxes {
-  position: sticky;
-  width: 100%;
-  height: 40px;
-  bottom: 10px;
-}
+
 .small_box {
   margin: 0;
   background-color: #fff;

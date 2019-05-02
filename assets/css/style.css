@@ -43,6 +43,12 @@ CREDIT: https://jsfiddle.net/SkiWether/r8ErN/ for the on/off or toggle effect fo
   /* padding: 10px 10px; */
 }
 
+/* #timeline-left, #timeline-right {
+  height: 100%;
+  width: 500px;
+  color: #4aaaa5;
+} */
+
 .history-block {
   height: 100%;
   width: 300px;
@@ -253,7 +259,7 @@ CREDIT: https://jsfiddle.net/SkiWether/r8ErN/ for the on/off or toggle effect fo
 }
 
 /* FOOTER FORMATTING */
-.footer {
+/* .footer {
   bottom: 0;
   width: 100%;
   position: fixed;
@@ -271,4 +277,16 @@ CREDIT: https://jsfiddle.net/SkiWether/r8ErN/ for the on/off or toggle effect fo
 .display-4 {
   font-size: 1.75rem;
   color: #4aaaa5;
+} */
+
+@media only screen and (max-width: 768px) {
+  /* FOR MOBILE PHONES: */
+  body {font-size: 12px; overflow: auto; margin: 1em 0em 1em 0em;}
+  /* MAINTAINING THE BELOW CSS FOR REFERENCE
+  [class*="col-"] {width: 100%;}
+  .row, .row-bottom {width: 100%; flex-direction: column;}
+  .html {padding: 1.25em;}
+  .menuToggle.nes-btn {height: 40px; font-size: 12px;}
+  .nes-container.with-title.is-dark {width: 100%;}
+  h2 {font-size: 24px;} */
 }

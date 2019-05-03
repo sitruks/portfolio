@@ -9,10 +9,69 @@ html {
 body {
     font-family: 'Gochi Hand', cursive;
     /* background-color: #cc8b41; */
+    background-color: transparent;
     text-shadow: 0px 2px 8px #cc8b41, 1px 0 1px #cc8b41, 1px 0px 0px #cc8b41;
     text-align: left;
     margin: 1em 4em 1em 4em;
 }
+
+h2 {
+  text-align: center;
+}
+
+/* ------------- HEADSHOT POSTAGE STAMP CSS
+CREDIT: https://codepen.io/orhanveli/pen/tbGJL 
+http://thenewcode.com/446/Turn-Images-Into-Postage-Stamps-with-border-image for code
+------------- */
+
+#headshot {
+  background: url('../images/kms_headshot.jpg');
+  background-size:cover;
+  z-index: 5px;
+}
+
+.stamp {
+	width: 163px;
+	height: 225px;
+	display: inline-block;
+	padding: 10px;
+	background: white;
+	position: relative;
+	-webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+	/*The stamp cutout will be created using crisp radial gradients*/
+	background: radial-gradient(
+		transparent 0px, 
+		transparent 4px, 
+		white 4px,
+		white
+	);
+	/*reducing the gradient size*/
+	background-size: 20px 20px;
+	/*Offset to move the holes to the edge*/
+	background-position: -10px -10px;
+}
+
+.stamp:after {
+	position: absolute;
+	/*We can shrink the pseudo element here to hide the shadow edges*/
+	left: 5px; top: 5px; right: 5px; bottom: 5px;
+	/*Shadow - doesn't look good because of the stamp cutout. We can still move this into another pseudo element behind the .stamp main element*/
+	
+  /*box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);*/
+	/*pushing it back*/
+	z-index: -1;
+}
+
+.stamp:before {
+	position: absolute;
+	bottom: 0; left: 0;
+	font: bold 24px arial;
+	color: white;
+	opacity: 0.75;
+	line-height: 100%;
+	padding: 20px;
+}
+
 
 /* ------------- TIMELINE FORMATTING RESPONSIVE 
 ALTHOUGH I EXPENDED A GOOD AMOUNT OF EFFORT TO DEVELOP A CUSTOM TIMELINE FOR MY PORTFOLIO, CREDIT AND INSPIRATION IS UNDOUBTEDLY DUE TO THE FOLLOWING GREAT PEOPLE:
@@ -268,7 +327,7 @@ CREDIT: https://jsfiddle.net/SkiWether/r8ErN/ for the on/off or toggle effect fo
   color: #ffffff;
   border-top: solid 8px #4aaaa5;
   font-size: 14px;
-}
+} */
 
 .footerText {
   margin-top: 10px;
@@ -277,7 +336,7 @@ CREDIT: https://jsfiddle.net/SkiWether/r8ErN/ for the on/off or toggle effect fo
 .display-4 {
   font-size: 1.75rem;
   color: #4aaaa5;
-} */
+}
 
 @media only screen and (max-width: 768px) {
   /* FOR MOBILE PHONES: */

@@ -15,12 +15,6 @@ body {
     margin: 1em 4em 1em 4em;
 }
 
-h2 {
-  text-align: center;
-  font-size: 100px;
-  padding: 0em .75em;
-}
-
 /* ------------- HEADSHOT POSTAGE STAMP CSS
 CREDIT: https://codepen.io/orhanveli/pen/tbGJL 
 http://thenewcode.com/446/Turn-Images-Into-Postage-Stamps-with-border-image for code
@@ -79,6 +73,21 @@ http://thenewcode.com/446/Turn-Images-Into-Postage-Stamps-with-border-image for 
 	padding: 20px;
 }
 
+/* ------------- PAPER FOLD EFFECT
+CREDIT: Visit [oridomi.com](http://oridomi.com) for examples, documentation and notes.
+ESSENTIALLY CHERRY PICKED THE CSS THAT IS DEPENDENT ON oridomi 
+------------- */ 
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 0em .75em;
+}
+
+#resume {
+  background: url('../images/resumeTemp.png');
+  background-size:cover;
+}
 
 /* ------------- TIMELINE FORMATTING RESPONSIVE 
 ALTHOUGH I EXPENDED A GOOD AMOUNT OF EFFORT TO DEVELOP A CUSTOM TIMELINE FOR MY PORTFOLIO, CREDIT AND INSPIRATION IS UNDOUBTEDLY DUE TO THE FOLLOWING GREAT PEOPLE:

@@ -30,3 +30,102 @@
         </div>
     </div>
 </div>
+
+
+<ul>
+        <li>
+          <div class="demo demo1">
+            <h3>Hello.</h3>
+            <p>from DOM-land</p>
+          </div>
+          <div>
+            <div class="label">accordion(20)</div>
+            <div class="button" data-n="0">fold</div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="demo demo5"></div>
+          <div>
+            <div class="label">reveal(30)</div>
+            <div class="button" data-n="4">fold</div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="demo demo2">
+            <h3>Late<br>Capitalism</h3>
+          </div>
+          <div>
+            <div class="label">reveal(40)</div>
+            <div class="button" data-n="1">fold</div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="demo demo3">
+            <h3>Tennis<br>Court<br>Oath</h3>
+          </div>
+          <div>
+            <div class="label">accordion(-20)</div>
+            <div class="button" data-n="2">fold</div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="demo demo4">
+            Ersatz
+          </div>
+          <div>
+            <div class="label">stairs(18)</div>
+            <div class="button" data-n="3">fold</div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="demo demo6">
+  <pre>
+  
+  /*
+  
+   $$$$$$\            $$\ $$$$$$$\                          $$\
+  $$  __$$\           \__|$$  __$$\                         \__|
+  $$ /  $$ | $$$$$$\  $$\ $$ |  $$ | $$$$$$\  $$$$$$\$$$$\  $$\
+  $$ |  $$ |$$  __$$\ $$ |$$ |  $$ |$$  __$$\ $$  _$$  _$$\ $$ |
+  $$ |  $$ |$$ |  \__|$$ |$$ |  $$ |$$ /  $$ |$$ / $$ / $$ |$$ |
+  $$ |  $$ |$$ |      $$ |$$ |  $$ |$$ |  $$ |$$ | $$ | $$ |$$ |
+   $$$$$$  |$$ |      $$ |$$$$$$$  |\$$$$$$  |$$ | $$ | $$ |$$ |
+   \______/ \__|      \__|\_______/  \______/ \__| \__| \__|\__|
+  
+  v. 1.0.0
+  
+  */
+  
+  var demo6 = new OriDomi('.demo6', {
+    hPanels: 4,
+    ripple:  true,
+    shading: false
+  });
+  
+  </pre>
+          </div>
+          <div>
+            <div class="label">stairs(20)</div>
+            <div class="button" data-n="5">fold</div>
+          </div>
+        </li>
+  
+        <li id="fibonacci">
+          <div class="demo demo7"></div>
+          <div>
+            <div class="label">reveal(45)</div>
+            <div class="button" data-n="6">fold</div>
+          </div>
+          <p class="note">
+            * This demo illustrates the ability to define custom panel sizes:
+            the proportions here follow a reversed Fibonacci Sequence
+            (1, 1, 2, 3, 5, 8, 13, 21, 34).
+          </p>
+        </li>
+  
+      </ul>

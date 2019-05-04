@@ -17,6 +17,8 @@ body {
 
 h2 {
   text-align: center;
+  font-size: 100px;
+  padding: 0em .75em;
 }
 
 /* ------------- HEADSHOT POSTAGE STAMP CSS
@@ -27,12 +29,17 @@ http://thenewcode.com/446/Turn-Images-Into-Postage-Stamps-with-border-image for 
 #headshot {
   background: url('../images/kms_headshot.jpg');
   background-size:cover;
-  z-index: 5px;
+  margin: auto;
+  width: 140px;
+	height: 202px;
+	display: inline-block;
+	padding: 10px;
+	position: relative;
 }
 
 .stamp {
-	width: 163px;
-	height: 225px;
+	width: 161px;
+	height: 221px;
 	display: inline-block;
 	padding: 10px;
 	background: white;

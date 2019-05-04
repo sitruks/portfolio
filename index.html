@@ -17,18 +17,34 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-3-lg">
-                <div class="stamp">
-                    <div id="headshot" class="row"></div>
-                </div>
-            </div>
-            <div class="col-9-lg">
-                <div class="row">
+            <div class="row">
+                <div class="col-9-lg">
+                    <ul id="portfolioNav">
+                        <li>
+                            <button id="seeResume" class="btn">Kurtis Santillanes' Resume</button><br>
+                        </li>
+                        <li>
+                            <a class="btn" href="https://www.linkedin.com/in/ksantillanes/"
+                                role="button" target="_blank">LinkedIn Page</a>
+                        </li>
+                        <li>
+                            <a class="btn" href="https://github.com/sitruks/"
+                                role="button" target="_blank">Github Homepage</a>
+                        </li>
+                        <li>
+                            <button id="seeResume" class="btn">see resume</button>
+                        </li>
+                    </ul>
                     <ul>
                         <div id="resume" class="paper">
                             <h2>Kurtis Santillanes</h2>
                         </div>
                     </ul>
+                </div>
+            </div>
+            <div class="col-3-lg">
+                <div class="stamp">
+                    <div id="headshot" class="row"></div>
                 </div>
             </div>
         </div>
@@ -403,14 +419,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="assets/javascript/oridomi.min.js"></script>
+    <script src="assets/javascript/oridomiRules.js"></script>
     <script src="assets/javascript/timeline.js"></script>
-    <script>
-        var $folded = $('.paper').oriDomi({/* options object */ });
-        // when using jQuery, iterate OriDomi methods over multiple elements like this:
-        $folded.oriDomi('accordion', 20);
-        // to access the OriDomi instance at the top of the jQuery selection directly:
-        var folded = $folded.oriDomi(true);</script>
-
 </body>
 
 </html>

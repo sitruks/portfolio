@@ -73,20 +73,25 @@ http://thenewcode.com/446/Turn-Images-Into-Postage-Stamps-with-border-image for 
 	padding: 20px;
 }
 
-/* ------------- PAPER FOLD EFFECT
+/* ------------- PAPER FOLD EFFECT & TOP NAV
 CREDIT: Visit [oridomi.com](http://oridomi.com) for examples, documentation and notes.
 ESSENTIALLY CHERRY PICKED THE CSS THAT IS DEPENDENT ON oridomi 
 ------------- */ 
 
 h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 4.5em;
   padding: 0em .75em;
 }
 
 #resume {
   background: url('../images/resumeTemp.png');
   background-size:cover;
+}
+
+#portfolioNav {
+  list-style-type: none;
+  padding: .25em 0em;
 }
 
 /* ------------- TIMELINE FORMATTING RESPONSIVE 

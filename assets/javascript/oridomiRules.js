@@ -12,9 +12,10 @@ var folded = new OriDomi('.paper', {
 });
 
 $('#seeResume').on('click', function () {
-    $('#resume').toggle('active');
+  $('#resume').toggle();
     folded.reveal(100, 'top');
   });
+
 
 //   $('#seeResume').on('click', function () {
 //     const foldAndUnfold = folded.foldUp();

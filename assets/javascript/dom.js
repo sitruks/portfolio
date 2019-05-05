@@ -1,0 +1,5 @@
+$(function () {
+
+    $('#resume').hide();
+  
+  });

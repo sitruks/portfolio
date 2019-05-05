@@ -73,7 +73,7 @@ http://thenewcode.com/446/Turn-Images-Into-Postage-Stamps-with-border-image for 
 	padding: 20px;
 }
 
-/* ------------- PAPER FOLD EFFECT & TOP NAV
+/* ------------- PAPER FOLD EFFECT & LETTER TOP NAV
 CREDIT: Visit [oridomi.com](http://oridomi.com) for examples, documentation and notes.
 ESSENTIALLY CHERRY PICKED THE CSS THAT IS DEPENDENT ON oridomi 
 ------------- */ 
@@ -87,11 +87,33 @@ h2 {
 #resume {
   background: url('../images/resumeTemp.png');
   background-size: cover;
+  width: 500px;
+  height: 100%;
+}
+
+/* need to set this value to override a default in oridomi.js that utilized the '!important' modifier. */
+.oridomi-active {
+  background-image: none;
 }
 
 #portfolioNav {
   list-style-type: none;
   padding: .25em 0em;
+}
+
+.btn {
+  text-shadow: none;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+/* format the top line to help text align as a address block */
+#seeResume.btn {
+  text-shadow: none;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: .5px;
 }
 
 /* ------------- TIMELINE FORMATTING RESPONSIVE 

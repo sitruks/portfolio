@@ -13,20 +13,35 @@ $(function () {
   });
   // CREDIT: https://bootstrapious.com/p/bootstrap-carousel for the general swipe framework
   // tested ... works but need to refine the pixel width. think about adding divs with arrows in place of the #thumbs
-  $('#timelineContainer').on("touchstart", function (event) {
-    let xClick = event.originalEvent.touches[0].pageX;
-    $(this).on("touchmove", function (event) {
-      let xMove = event.originalEvent.touches[0].pageX;
-      if (Math.floor(xClick - xMove) > touchSensitivity) {
-        $(this).find('#thumbs').css('right', '100px');
-      } else if (Math.floor(xClick - xMove) < -(touchSensitivity)) {
-        $(this).find('#thumbs').css('left', '100px');
-      }
+  // $('#timelineContainer').on("touchstart", function (event) {
+  //   let xClick = event.originalEvent.touches[0].pageX;
+  //   $(this).on("touchmove", function (event) {
+  //     let xMove = event.originalEvent.touches[0].pageX;
+  //     if (Math.floor(xClick - xMove) > touchSensitivity) {
+  //       $(this).find('#thumbs').css('right', '100px');
+  //     } else if (Math.floor(xClick - xMove) < -(touchSensitivity)) {
+  //       $(this).find('#thumbs').css('left', '100px');
+  //     }
+  //   });
+  //   $('#timelineContainer').on("touchend", function () {
+  //     $(this).off("touchmove");
+  //   });
+  // });
+
+  $("#timelineContainer").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > touchSensitivity) {
+            $(this).carousel('next');
+        } else if (Math.floor(xClick - xMove) < -(touchSensitivity)) {
+            $(this).carousel('prev');
+        }
     });
-    $('#timelineContainer').on("touchend", function () {
-      $(this).off("touchmove");
+    $("#timelineContainer").on("touchend", function () {
+        $(this).off("touchmove");
     });
-  });
+});
 
   // Set "active" class on click
   $('.history-block').on('click', function () {
